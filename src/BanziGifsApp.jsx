@@ -2,7 +2,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types';
 import { AddCategory, GifGrid } from './components';
 
-export const GifExpertApp = ({catCategories}) => {
+export const BanziGifsApp = ({catCategories}) => {
 
     const [categories, setCategories] = useState(catCategories);
 
@@ -45,10 +45,10 @@ export const GifExpertApp = ({catCategories}) => {
     )
 }
 
-GifExpertApp.propTypes = {
+BanziGifsApp.propTypes = {
     catCategories: PropTypes.array.isRequired,
 }
 
-GifExpertApp.defaultProps = {
+BanziGifsApp.defaultProps = {
     catCategories: [],
 }
